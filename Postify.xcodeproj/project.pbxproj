@@ -13,6 +13,11 @@
 		FBA0CA7A2ABC894F006681C3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBA0CA792ABC894F006681C3 /* Preview Assets.xcassets */; };
 		FBE554012AC35D4F0000CA6C /* Networker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE554002AC35D4F0000CA6C /* Networker.swift */; };
 		FBE554032AC35D6C0000CA6C /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE554022AC35D6C0000CA6C /* Endpoint.swift */; };
+		FBE554092AC35F0C0000CA6C /* URLEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE554082AC35F0C0000CA6C /* URLEndpoint.swift */; };
+		FBE5540B2AC35F450000CA6C /* UserEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE5540A2AC35F450000CA6C /* UserEndpoint.swift */; };
+		FBE5540D2AC361870000CA6C /* PostEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE5540C2AC361870000CA6C /* PostEndpoint.swift */; };
+		FBE5540F2AC362570000CA6C /* CommentEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE5540E2AC362570000CA6C /* CommentEndpoint.swift */; };
+		FBE554112AC363130000CA6C /* TagEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE554102AC363130000CA6C /* TagEndpoint.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +28,11 @@
 		FBA0CA792ABC894F006681C3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FBE554002AC35D4F0000CA6C /* Networker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networker.swift; sourceTree = "<group>"; };
 		FBE554022AC35D6C0000CA6C /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		FBE554082AC35F0C0000CA6C /* URLEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLEndpoint.swift; sourceTree = "<group>"; };
+		FBE5540A2AC35F450000CA6C /* UserEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEndpoint.swift; sourceTree = "<group>"; };
+		FBE5540C2AC361870000CA6C /* PostEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostEndpoint.swift; sourceTree = "<group>"; };
+		FBE5540E2AC362570000CA6C /* CommentEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentEndpoint.swift; sourceTree = "<group>"; };
+		FBE554102AC363130000CA6C /* TagEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagEndpoint.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +65,7 @@
 		FBA0CA712ABC894E006681C3 /* Postify */ = {
 			isa = PBXGroup;
 			children = (
+				FBE554062AC35EF50000CA6C /* Data */,
 				FBE554042AC35D770000CA6C /* App */,
 				FBA0CA742ABC894E006681C3 /* ContentView.swift */,
 				FBE553FE2AC35D370000CA6C /* Core */,
@@ -103,6 +114,26 @@
 				FBA0CA782ABC894F006681C3 /* Preview Content */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FBE554062AC35EF50000CA6C /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				FBE554072AC35EFA0000CA6C /* Endpoints */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		FBE554072AC35EFA0000CA6C /* Endpoints */ = {
+			isa = PBXGroup;
+			children = (
+				FBE5540E2AC362570000CA6C /* CommentEndpoint.swift */,
+				FBE5540C2AC361870000CA6C /* PostEndpoint.swift */,
+				FBE554102AC363130000CA6C /* TagEndpoint.swift */,
+				FBE5540A2AC35F450000CA6C /* UserEndpoint.swift */,
+				FBE554082AC35F0C0000CA6C /* URLEndpoint.swift */,
+			);
+			path = Endpoints;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,10 +206,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBE5540D2AC361870000CA6C /* PostEndpoint.swift in Sources */,
 				FBA0CA752ABC894E006681C3 /* ContentView.swift in Sources */,
 				FBA0CA732ABC894E006681C3 /* PostifyApp.swift in Sources */,
 				FBE554032AC35D6C0000CA6C /* Endpoint.swift in Sources */,
+				FBE5540F2AC362570000CA6C /* CommentEndpoint.swift in Sources */,
+				FBE5540B2AC35F450000CA6C /* UserEndpoint.swift in Sources */,
+				FBE554112AC363130000CA6C /* TagEndpoint.swift in Sources */,
 				FBE554012AC35D4F0000CA6C /* Networker.swift in Sources */,
+				FBE554092AC35F0C0000CA6C /* URLEndpoint.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
