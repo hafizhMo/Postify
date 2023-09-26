@@ -11,6 +11,8 @@
 		FBA0CA752ABC894E006681C3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA0CA742ABC894E006681C3 /* ContentView.swift */; };
 		FBA0CA772ABC894F006681C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBA0CA762ABC894F006681C3 /* Assets.xcassets */; };
 		FBA0CA7A2ABC894F006681C3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBA0CA792ABC894F006681C3 /* Preview Assets.xcassets */; };
+		FBE554012AC35D4F0000CA6C /* Networker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE554002AC35D4F0000CA6C /* Networker.swift */; };
+		FBE554032AC35D6C0000CA6C /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE554022AC35D6C0000CA6C /* Endpoint.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		FBA0CA742ABC894E006681C3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FBA0CA762ABC894F006681C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FBA0CA792ABC894F006681C3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FBE554002AC35D4F0000CA6C /* Networker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networker.swift; sourceTree = "<group>"; };
+		FBE554022AC35D6C0000CA6C /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +55,10 @@
 		FBA0CA712ABC894E006681C3 /* Postify */ = {
 			isa = PBXGroup;
 			children = (
-				FBA0CA722ABC894E006681C3 /* PostifyApp.swift */,
+				FBE554042AC35D770000CA6C /* App */,
 				FBA0CA742ABC894E006681C3 /* ContentView.swift */,
-				FBA0CA762ABC894F006681C3 /* Assets.xcassets */,
-				FBA0CA782ABC894F006681C3 /* Preview Content */,
+				FBE553FE2AC35D370000CA6C /* Core */,
+				FBE554052AC35D810000CA6C /* Supporting Files */,
 			);
 			path = Postify;
 			sourceTree = "<group>";
@@ -65,6 +69,40 @@
 				FBA0CA792ABC894F006681C3 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FBE553FE2AC35D370000CA6C /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				FBE553FF2AC35D3C0000CA6C /* Networking */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		FBE553FF2AC35D3C0000CA6C /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				FBE554002AC35D4F0000CA6C /* Networker.swift */,
+				FBE554022AC35D6C0000CA6C /* Endpoint.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		FBE554042AC35D770000CA6C /* App */ = {
+			isa = PBXGroup;
+			children = (
+				FBA0CA722ABC894E006681C3 /* PostifyApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		FBE554052AC35D810000CA6C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FBA0CA762ABC894F006681C3 /* Assets.xcassets */,
+				FBA0CA782ABC894F006681C3 /* Preview Content */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +177,8 @@
 			files = (
 				FBA0CA752ABC894E006681C3 /* ContentView.swift in Sources */,
 				FBA0CA732ABC894E006681C3 /* PostifyApp.swift in Sources */,
+				FBE554032AC35D6C0000CA6C /* Endpoint.swift in Sources */,
+				FBE554012AC35D4F0000CA6C /* Networker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,7 +306,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Postify/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Postify/Supporting Files/Preview Content\"";
 				DEVELOPMENT_TEAM = Z824M97CF2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -295,7 +335,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Postify/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Postify/Supporting Files/Preview Content\"";
 				DEVELOPMENT_TEAM = Z824M97CF2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
