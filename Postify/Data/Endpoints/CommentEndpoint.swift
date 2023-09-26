@@ -21,7 +21,7 @@ extension Endpoint {
     return Endpoint(path: "/user/\(id)/comment")
   }
   
-  static func createComment(owner: String, post: String) -> Self {
+  static func createComment(with comment: CommentCreate) -> Self {
     return Endpoint(path: "/comment/create")
   }
   

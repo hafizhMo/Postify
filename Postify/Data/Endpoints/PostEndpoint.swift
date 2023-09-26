@@ -25,7 +25,7 @@ extension Endpoint {
     return Endpoint(path: "/post/\(id)")
   }
   
-  static func createPost(owner: String, post: String) -> Self {
+  static func createPost(with post: PostCreate) -> Self {
     return Endpoint(path: "/post/create")
   }
   

@@ -18,6 +18,10 @@
 		FBE5540D2AC361870000CA6C /* PostEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE5540C2AC361870000CA6C /* PostEndpoint.swift */; };
 		FBE5540F2AC362570000CA6C /* CommentEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE5540E2AC362570000CA6C /* CommentEndpoint.swift */; };
 		FBE554112AC363130000CA6C /* TagEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE554102AC363130000CA6C /* TagEndpoint.swift */; };
+		FBE554142AC363A10000CA6C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE554132AC363A10000CA6C /* User.swift */; };
+		FBE554162AC363A70000CA6C /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE554152AC363A60000CA6C /* Post.swift */; };
+		FBE554182AC363AD0000CA6C /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE554172AC363AD0000CA6C /* Comment.swift */; };
+		FBE5541A2AC363B80000CA6C /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE554192AC363B80000CA6C /* Tag.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +37,10 @@
 		FBE5540C2AC361870000CA6C /* PostEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostEndpoint.swift; sourceTree = "<group>"; };
 		FBE5540E2AC362570000CA6C /* CommentEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentEndpoint.swift; sourceTree = "<group>"; };
 		FBE554102AC363130000CA6C /* TagEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagEndpoint.swift; sourceTree = "<group>"; };
+		FBE554132AC363A10000CA6C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		FBE554152AC363A60000CA6C /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		FBE554172AC363AD0000CA6C /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		FBE554192AC363B80000CA6C /* Tag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				FBE554072AC35EFA0000CA6C /* Endpoints */,
+				FBE554122AC3638B0000CA6C /* Models */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -134,6 +143,17 @@
 				FBE554082AC35F0C0000CA6C /* URLEndpoint.swift */,
 			);
 			path = Endpoints;
+			sourceTree = "<group>";
+		};
+		FBE554122AC3638B0000CA6C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FBE554172AC363AD0000CA6C /* Comment.swift */,
+				FBE554152AC363A60000CA6C /* Post.swift */,
+				FBE554192AC363B80000CA6C /* Tag.swift */,
+				FBE554132AC363A10000CA6C /* User.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,14 +227,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				FBE5540D2AC361870000CA6C /* PostEndpoint.swift in Sources */,
+				FBE554162AC363A70000CA6C /* Post.swift in Sources */,
 				FBA0CA752ABC894E006681C3 /* ContentView.swift in Sources */,
 				FBA0CA732ABC894E006681C3 /* PostifyApp.swift in Sources */,
 				FBE554032AC35D6C0000CA6C /* Endpoint.swift in Sources */,
 				FBE5540F2AC362570000CA6C /* CommentEndpoint.swift in Sources */,
 				FBE5540B2AC35F450000CA6C /* UserEndpoint.swift in Sources */,
+				FBE554182AC363AD0000CA6C /* Comment.swift in Sources */,
 				FBE554112AC363130000CA6C /* TagEndpoint.swift in Sources */,
 				FBE554012AC35D4F0000CA6C /* Networker.swift in Sources */,
+				FBE554142AC363A10000CA6C /* User.swift in Sources */,
 				FBE554092AC35F0C0000CA6C /* URLEndpoint.swift in Sources */,
+				FBE5541A2AC363B80000CA6C /* Tag.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
