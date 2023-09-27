@@ -11,13 +11,32 @@ struct PostDetailsView: View {
   @ObservedObject var viewModel: PostDetailsViewModel
   
   var body: some View {
-    VStack {
-      Text(viewModel.post.text)
-        .bold()
-        .font(.headline)
-      Text(viewModel.post.publishDate)
-        .font(.caption)
-        .foregroundColor(.secondary)
+    ScrollView {
+      VStack {
+        Text(viewModel.post.text)
+          .bold()
+          .font(.headline)
+        Text(viewModel.post.publishDate)
+          .font(.caption)
+          .foregroundColor(.secondary)
+        
+        Text("Comments (\(viewModel.comments.data.count))")
+          .bold()
+          .font(.title3)
+          .padding(.top)
+        
+        if viewModel.comments.data.count > 0 {
+          ForEach(viewModel.comments.data) { comment in
+            Text(comment.message)
+          }
+        } else {
+          Text("No Comments")
+            .font(.caption2)
+            .foregroundColor(.secondary)
+        }
+      }
+    }.onAppear {
+      viewModel.onAppear()
     }
   }
 }

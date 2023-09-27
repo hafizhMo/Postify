@@ -19,6 +19,7 @@
 		FB3FCC102AC474F600E16E53 /* PostDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3FCC0F2AC474F600E16E53 /* PostDetailsViewModel.swift */; };
 		FB3FCC122AC4750100E16E53 /* PostDetailsConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3FCC112AC4750100E16E53 /* PostDetailsConfigurator.swift */; };
 		FB3FCC142AC4750C00E16E53 /* PostsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3FCC132AC4750C00E16E53 /* PostsRouter.swift */; };
+		FB3FCC162AC47A2D00E16E53 /* CommentsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3FCC152AC47A2D00E16E53 /* CommentsService.swift */; };
 		FB9925002AC42F1700C58224 /* UsersService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9924FF2AC42F1700C58224 /* UsersService.swift */; };
 		FB9925042AC4305200C58224 /* UsersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9925032AC4305200C58224 /* UsersView.swift */; };
 		FB9925062AC4305D00C58224 /* UsersConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9925052AC4305D00C58224 /* UsersConfigurator.swift */; };
@@ -52,6 +53,7 @@
 		FB3FCC0F2AC474F600E16E53 /* PostDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailsViewModel.swift; sourceTree = "<group>"; };
 		FB3FCC112AC4750100E16E53 /* PostDetailsConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailsConfigurator.swift; sourceTree = "<group>"; };
 		FB3FCC132AC4750C00E16E53 /* PostsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsRouter.swift; sourceTree = "<group>"; };
+		FB3FCC152AC47A2D00E16E53 /* CommentsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsService.swift; sourceTree = "<group>"; };
 		FB9924FF2AC42F1700C58224 /* UsersService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersService.swift; sourceTree = "<group>"; };
 		FB9925032AC4305200C58224 /* UsersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersView.swift; sourceTree = "<group>"; };
 		FB9925052AC4305D00C58224 /* UsersConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersConfigurator.swift; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 			children = (
 				FB9924FF2AC42F1700C58224 /* UsersService.swift */,
 				FB3FCC0A2AC44FCF00E16E53 /* PostsService.swift */,
+				FB3FCC152AC47A2D00E16E53 /* CommentsService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -346,6 +349,7 @@
 				FBE554012AC35D4F0000CA6C /* Networker.swift in Sources */,
 				FBE554142AC363A10000CA6C /* User.swift in Sources */,
 				FBE554092AC35F0C0000CA6C /* URLEndpoint.swift in Sources */,
+				FB3FCC162AC47A2D00E16E53 /* CommentsService.swift in Sources */,
 				FBE5541A2AC363B80000CA6C /* Tag.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
