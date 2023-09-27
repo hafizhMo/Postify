@@ -13,7 +13,9 @@ struct PostsView: View {
   var body: some View {
     NavigationView {
       List(viewModel.posts.data) { post in
-        Text(post.text)
+        NavigationLink(destination: PostsRouter.destinationForTappedPost(post: post)) {
+          Text(post.text)
+        }
       }.navigationTitle("Posts")
     }.onAppear {
       viewModel.onAppear()

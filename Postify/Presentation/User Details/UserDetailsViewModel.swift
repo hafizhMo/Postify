@@ -5,11 +5,10 @@
 //  Created by Hafizh Mo on 27/09/23.
 //
 
-import UIKit
+import Foundation
 import Combine
 
 class UserDetailsViewModel: ObservableObject {
-  @Published public var avatar: UIImage = UIImage()
   @Published public var user: UserFull = UserFull.fake()
   public let userPreview: UserPreview
   
