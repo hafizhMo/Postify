@@ -7,10 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FB3FCBFC2AC433A200E16E53 /* UserDetailsConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3FCBFB2AC433A200E16E53 /* UserDetailsConfigurator.swift */; };
+		FB3FCBFE2AC433AC00E16E53 /* UserDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3FCBFD2AC433AC00E16E53 /* UserDetailsViewModel.swift */; };
+		FB3FCC002AC433BB00E16E53 /* UserDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3FCBFF2AC433BB00E16E53 /* UserDetailsView.swift */; };
+		FB3FCC022AC4396D00E16E53 /* UsersRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3FCC012AC4396D00E16E53 /* UsersRouter.swift */; };
 		FB9924FE2AC42EBB00C58224 /* PictureService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9924FD2AC42EBB00C58224 /* PictureService.swift */; };
 		FB9925002AC42F1700C58224 /* UsersService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9924FF2AC42F1700C58224 /* UsersService.swift */; };
 		FB9925042AC4305200C58224 /* UsersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9925032AC4305200C58224 /* UsersView.swift */; };
-		FB9925062AC4305D00C58224 /* UserConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9925052AC4305D00C58224 /* UserConfigurator.swift */; };
+		FB9925062AC4305D00C58224 /* UsersConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9925052AC4305D00C58224 /* UsersConfigurator.swift */; };
 		FB9925082AC4306700C58224 /* UsersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9925072AC4306700C58224 /* UsersViewModel.swift */; };
 		FBA0CA732ABC894E006681C3 /* PostifyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA0CA722ABC894E006681C3 /* PostifyApp.swift */; };
 		FBA0CA772ABC894F006681C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBA0CA762ABC894F006681C3 /* Assets.xcassets */; };
@@ -29,10 +33,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FB3FCBFB2AC433A200E16E53 /* UserDetailsConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsConfigurator.swift; sourceTree = "<group>"; };
+		FB3FCBFD2AC433AC00E16E53 /* UserDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsViewModel.swift; sourceTree = "<group>"; };
+		FB3FCBFF2AC433BB00E16E53 /* UserDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsView.swift; sourceTree = "<group>"; };
+		FB3FCC012AC4396D00E16E53 /* UsersRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersRouter.swift; sourceTree = "<group>"; };
 		FB9924FD2AC42EBB00C58224 /* PictureService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureService.swift; sourceTree = "<group>"; };
 		FB9924FF2AC42F1700C58224 /* UsersService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersService.swift; sourceTree = "<group>"; };
 		FB9925032AC4305200C58224 /* UsersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersView.swift; sourceTree = "<group>"; };
-		FB9925052AC4305D00C58224 /* UserConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserConfigurator.swift; sourceTree = "<group>"; };
+		FB9925052AC4305D00C58224 /* UsersConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersConfigurator.swift; sourceTree = "<group>"; };
 		FB9925072AC4306700C58224 /* UsersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewModel.swift; sourceTree = "<group>"; };
 		FBA0CA6F2ABC894E006681C3 /* Postify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Postify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBA0CA722ABC894E006681C3 /* PostifyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostifyApp.swift; sourceTree = "<group>"; };
@@ -62,6 +70,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FB3FCBFA2AC4338400E16E53 /* User Details */ = {
+			isa = PBXGroup;
+			children = (
+				FB3FCBFB2AC433A200E16E53 /* UserDetailsConfigurator.swift */,
+				FB3FCBFF2AC433BB00E16E53 /* UserDetailsView.swift */,
+				FB3FCBFD2AC433AC00E16E53 /* UserDetailsViewModel.swift */,
+			);
+			path = "User Details";
+			sourceTree = "<group>";
+		};
 		FB9924FC2AC42E7900C58224 /* Services */ = {
 			isa = PBXGroup;
 			children = (
@@ -74,6 +92,7 @@
 		FB9925012AC4303E00C58224 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				FB3FCBFA2AC4338400E16E53 /* User Details */,
 				FB9925022AC4304500C58224 /* Users */,
 			);
 			path = Presentation;
@@ -82,8 +101,9 @@
 		FB9925022AC4304500C58224 /* Users */ = {
 			isa = PBXGroup;
 			children = (
+				FB9925052AC4305D00C58224 /* UsersConfigurator.swift */,
+				FB3FCC012AC4396D00E16E53 /* UsersRouter.swift */,
 				FB9925032AC4305200C58224 /* UsersView.swift */,
-				FB9925052AC4305D00C58224 /* UserConfigurator.swift */,
 				FB9925072AC4306700C58224 /* UsersViewModel.swift */,
 			);
 			path = Users;
@@ -262,11 +282,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB3FCC002AC433BB00E16E53 /* UserDetailsView.swift in Sources */,
 				FBE5540D2AC361870000CA6C /* PostEndpoint.swift in Sources */,
 				FBE554162AC363A70000CA6C /* Post.swift in Sources */,
 				FB9924FE2AC42EBB00C58224 /* PictureService.swift in Sources */,
 				FB9925002AC42F1700C58224 /* UsersService.swift in Sources */,
-				FB9925062AC4305D00C58224 /* UserConfigurator.swift in Sources */,
+				FB9925062AC4305D00C58224 /* UsersConfigurator.swift in Sources */,
 				FBA0CA732ABC894E006681C3 /* PostifyApp.swift in Sources */,
 				FB9925082AC4306700C58224 /* UsersViewModel.swift in Sources */,
 				FBE554032AC35D6C0000CA6C /* Endpoint.swift in Sources */,
@@ -274,7 +295,10 @@
 				FBE5540F2AC362570000CA6C /* CommentEndpoint.swift in Sources */,
 				FBE5540B2AC35F450000CA6C /* UserEndpoint.swift in Sources */,
 				FBE554182AC363AD0000CA6C /* Comment.swift in Sources */,
+				FB3FCBFE2AC433AC00E16E53 /* UserDetailsViewModel.swift in Sources */,
+				FB3FCBFC2AC433A200E16E53 /* UserDetailsConfigurator.swift in Sources */,
 				FBE554112AC363130000CA6C /* TagEndpoint.swift in Sources */,
+				FB3FCC022AC4396D00E16E53 /* UsersRouter.swift in Sources */,
 				FBE554012AC35D4F0000CA6C /* Networker.swift in Sources */,
 				FBE554142AC363A10000CA6C /* User.swift in Sources */,
 				FBE554092AC35F0C0000CA6C /* URLEndpoint.swift in Sources */,

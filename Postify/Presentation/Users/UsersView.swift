@@ -13,7 +13,9 @@ struct UsersView: View {
   var body: some View {
     NavigationView {
       List(viewModel.users.data) { user in
-        Text("\(user.firstName) \(user.lastName)")
+        NavigationLink(destination: UsersRouter.destinationForTappedUser(user: user)) {
+          Text(user.firstName)
+        }
       }.navigationTitle("Users")
     }.onAppear {
       viewModel.onAppear()
