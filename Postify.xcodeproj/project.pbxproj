@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FB9924FE2AC42EBB00C58224 /* PictureService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9924FD2AC42EBB00C58224 /* PictureService.swift */; };
+		FB9925002AC42F1700C58224 /* UsersService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9924FF2AC42F1700C58224 /* UsersService.swift */; };
 		FBA0CA732ABC894E006681C3 /* PostifyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA0CA722ABC894E006681C3 /* PostifyApp.swift */; };
 		FBA0CA752ABC894E006681C3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA0CA742ABC894E006681C3 /* ContentView.swift */; };
 		FBA0CA772ABC894F006681C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBA0CA762ABC894F006681C3 /* Assets.xcassets */; };
@@ -25,6 +27,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FB9924FD2AC42EBB00C58224 /* PictureService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureService.swift; sourceTree = "<group>"; };
+		FB9924FF2AC42F1700C58224 /* UsersService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersService.swift; sourceTree = "<group>"; };
 		FBA0CA6F2ABC894E006681C3 /* Postify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Postify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBA0CA722ABC894E006681C3 /* PostifyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostifyApp.swift; sourceTree = "<group>"; };
 		FBA0CA742ABC894E006681C3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -54,6 +58,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FB9924FC2AC42E7900C58224 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				FB9924FD2AC42EBB00C58224 /* PictureService.swift */,
+				FB9924FF2AC42F1700C58224 /* UsersService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		FBA0CA662ABC894E006681C3 = {
 			isa = PBXGroup;
 			children = (
@@ -73,10 +86,10 @@
 		FBA0CA712ABC894E006681C3 /* Postify */ = {
 			isa = PBXGroup;
 			children = (
-				FBE554062AC35EF50000CA6C /* Data */,
 				FBE554042AC35D770000CA6C /* App */,
 				FBA0CA742ABC894E006681C3 /* ContentView.swift */,
 				FBE553FE2AC35D370000CA6C /* Core */,
+				FBE554062AC35EF50000CA6C /* Data */,
 				FBE554052AC35D810000CA6C /* Supporting Files */,
 			);
 			path = Postify;
@@ -129,6 +142,7 @@
 			children = (
 				FBE554072AC35EFA0000CA6C /* Endpoints */,
 				FBE554122AC3638B0000CA6C /* Models */,
+				FB9924FC2AC42E7900C58224 /* Services */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -228,6 +242,8 @@
 			files = (
 				FBE5540D2AC361870000CA6C /* PostEndpoint.swift in Sources */,
 				FBE554162AC363A70000CA6C /* Post.swift in Sources */,
+				FB9924FE2AC42EBB00C58224 /* PictureService.swift in Sources */,
+				FB9925002AC42F1700C58224 /* UsersService.swift in Sources */,
 				FBA0CA752ABC894E006681C3 /* ContentView.swift in Sources */,
 				FBA0CA732ABC894E006681C3 /* PostifyApp.swift in Sources */,
 				FBE554032AC35D6C0000CA6C /* Endpoint.swift in Sources */,
