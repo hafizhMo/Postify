@@ -14,16 +14,19 @@ struct UserDetailsView: View {
   
   var body: some View {
     VStack {
-      Image(uiImage: viewModel.avatar)
-        .resizable()
-        .aspectRatio(contentMode: .fit)
-        .frame(width: screenWidth * 0.2,
-               height: screenWidth * 0.2,
-               alignment: .center)
-        .clipShape(Circle())
-        .shadow(radius: 10)
-        .overlay(Circle().stroke(Color.blue, lineWidth: 3))
-        .padding()
+      AsyncImage(url: URL(string: viewModel.user.picture)) { image in
+        image
+          .resizable()
+          .scaledToFit()
+          .frame(width: screenWidth * 0.2, height: screenWidth * 0.2, alignment: .center)
+          .clipShape(Circle())
+          .shadow(radius: 10)
+          .overlay(Circle().stroke(Color.blue, lineWidth: 3))
+          .padding()
+      } placeholder: {
+        ProgressView()
+          .frame(width: screenWidth * 0.2, height: screenWidth * 0.2, alignment: .center)
+      }
       
       HStack {
         Text(viewModel.user.firstName)

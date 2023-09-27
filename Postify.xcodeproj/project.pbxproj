@@ -15,7 +15,6 @@
 		FB3FCC072AC44F5A00E16E53 /* PostsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3FCC062AC44F5A00E16E53 /* PostsViewModel.swift */; };
 		FB3FCC092AC44F6A00E16E53 /* PostsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3FCC082AC44F6A00E16E53 /* PostsView.swift */; };
 		FB3FCC0B2AC44FCF00E16E53 /* PostsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3FCC0A2AC44FCF00E16E53 /* PostsService.swift */; };
-		FB9924FE2AC42EBB00C58224 /* PictureService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9924FD2AC42EBB00C58224 /* PictureService.swift */; };
 		FB9925002AC42F1700C58224 /* UsersService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9924FF2AC42F1700C58224 /* UsersService.swift */; };
 		FB9925042AC4305200C58224 /* UsersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9925032AC4305200C58224 /* UsersView.swift */; };
 		FB9925062AC4305D00C58224 /* UsersConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9925052AC4305D00C58224 /* UsersConfigurator.swift */; };
@@ -45,7 +44,6 @@
 		FB3FCC062AC44F5A00E16E53 /* PostsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsViewModel.swift; sourceTree = "<group>"; };
 		FB3FCC082AC44F6A00E16E53 /* PostsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsView.swift; sourceTree = "<group>"; };
 		FB3FCC0A2AC44FCF00E16E53 /* PostsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsService.swift; sourceTree = "<group>"; };
-		FB9924FD2AC42EBB00C58224 /* PictureService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureService.swift; sourceTree = "<group>"; };
 		FB9924FF2AC42F1700C58224 /* UsersService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersService.swift; sourceTree = "<group>"; };
 		FB9925032AC4305200C58224 /* UsersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersView.swift; sourceTree = "<group>"; };
 		FB9925052AC4305D00C58224 /* UsersConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersConfigurator.swift; sourceTree = "<group>"; };
@@ -101,7 +99,6 @@
 		FB9924FC2AC42E7900C58224 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				FB9924FD2AC42EBB00C58224 /* PictureService.swift */,
 				FB9924FF2AC42F1700C58224 /* UsersService.swift */,
 				FB3FCC0A2AC44FCF00E16E53 /* PostsService.swift */,
 			);
@@ -306,7 +303,6 @@
 				FBE5540D2AC361870000CA6C /* PostEndpoint.swift in Sources */,
 				FB3FCC052AC44F4E00E16E53 /* PostsConfigurator.swift in Sources */,
 				FBE554162AC363A70000CA6C /* Post.swift in Sources */,
-				FB9924FE2AC42EBB00C58224 /* PictureService.swift in Sources */,
 				FB9925002AC42F1700C58224 /* UsersService.swift in Sources */,
 				FB9925062AC4305D00C58224 /* UsersConfigurator.swift in Sources */,
 				FBA0CA732ABC894E006681C3 /* PostifyApp.swift in Sources */,
