@@ -21,7 +21,7 @@ struct UserPreview: Codable, Identifiable {
 
 extension UserPreview {
   static func fake() -> Self {
-    return UserPreview(id: "1231", title: "Ms.", firstName: "Yiren", lastName: "Wang", picture: "https://randomuser.me/api/portraits/med/women/70.jpg")
+    return UserPreview(id: "1231", title: "Mrs.", firstName: "...", lastName: "...", picture: "https://via.placeholder.com/150x150")
   }
 }
 
@@ -41,7 +41,7 @@ struct UserFull: Codable, Identifiable {
 
 extension UserFull {
   static func fake() -> Self {
-    return UserFull(id: "12312", title: "Mrs.", firstName: "Yiren", lastName: "Wang", gender: "Female", email: "wang.yiren@mail.com", dateOfBirth: "2000/12/12", registerDate: "", phone: "1231222", picture: "https://randomuser.me/api/portraits/med/women/70.jpg", location: Location.fake())
+    return UserFull(id: "12312", title: "Mrs.", firstName: "...", lastName: "...", gender: "Female", email: "wang.yiren@mail.com", dateOfBirth: "2000/12/12", registerDate: "", phone: "1231222", picture: "https://via.placeholder.com/150x150", location: Location.fake())
   }
 }
 

@@ -23,7 +23,7 @@ struct PostPreview: Codable, Identifiable {
 
 extension PostPreview {
   public static func fake() -> Self {
-    return PostPreview(id: "123", text: "Lorem ipsum dolor", image: "", likes: 20, tags: ["public", "else"], publishDate: "", owner: UserPreview.fake())
+    return PostPreview(id: "123", text: "...", image: "https://via.placeholder.com/300x200", likes: 0, tags: ["??", "??"], publishDate: "", owner: UserPreview.fake())
   }
 }
 
