@@ -14,8 +14,7 @@ class UsersViewModel: ObservableObject {
   private var usersService: UsersServiceProtocol
   private var cancellables = Set<AnyCancellable>()
   
-  init(users: Users = Users(data: []), usersService: UsersServiceProtocol = UsersService()) {
-    self.users = users
+  init(usersService: UsersServiceProtocol = UsersService()) {
     self.usersService = usersService
   }
   

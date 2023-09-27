@@ -24,7 +24,7 @@ extension Endpoint {
   
   var headers: [String: Any] {
     return [
-      "app-id": "..."
+      "app-id": "650a4e461865ac5c694a4582"
     ]
   }
 }

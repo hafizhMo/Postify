@@ -13,6 +13,13 @@ extension Endpoint {
     return Endpoint(path: "/post")
   }
   
+  static func getPosts(count: Int, page: Int) -> Self {
+    return Endpoint(path: "/post", queryItems: [
+      URLQueryItem(name: "limit", value: "\(count)"),
+      URLQueryItem(name: "page", value: "\(page)")
+    ])
+  }
+  
   static func getPostsByUser(id: String) -> Self {
     return Endpoint(path: "/user/\(id)/post")
   }

@@ -11,7 +11,8 @@ import SwiftUI
 struct PostifyApp: App {
   var body: some Scene {
     WindowGroup {
-      UsersConfigurator.configureUsersView()
+//      UsersConfigurator.configureUsersView()
+      PostsConfigurator.configurePostsView()
     }
   }
 }
