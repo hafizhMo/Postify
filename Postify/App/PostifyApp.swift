@@ -11,8 +11,18 @@ import SwiftUI
 struct PostifyApp: App {
   var body: some Scene {
     WindowGroup {
-//      UsersConfigurator.configureUsersView()
-      PostsConfigurator.configurePostsView()
+      TabView {
+        PostsConfigurator.configurePostsView()
+          .tabItem {
+            Label("Browse", systemImage: "globe")
+          }
+        
+        UsersConfigurator.configureUsersView()
+          .tabItem {
+            Label("Users", systemImage: "person.3")
+          }
+        
+      }
     }
   }
 }

@@ -11,8 +11,10 @@ struct PostsView: View {
   @ObservedObject var viewModel: PostsViewModel
   
   var body: some View {
-    List(viewModel.posts.data) { post in
-      Text(post.text)
+    NavigationView {
+      List(viewModel.posts.data) { post in
+        Text(post.text)
+      }.navigationTitle("Posts")
     }.onAppear {
       viewModel.onAppear()
     }
