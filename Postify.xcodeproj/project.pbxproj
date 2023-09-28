@@ -27,6 +27,8 @@
 		FBA0CA732ABC894E006681C3 /* PostifyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA0CA722ABC894E006681C3 /* PostifyApp.swift */; };
 		FBA0CA772ABC894F006681C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBA0CA762ABC894F006681C3 /* Assets.xcassets */; };
 		FBA0CA7A2ABC894F006681C3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBA0CA792ABC894F006681C3 /* Preview Assets.xcassets */; };
+		FBBEB9502AC5398500677786 /* PostListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBEB94F2AC5398500677786 /* PostListItem.swift */; };
+		FBBEB9522AC54B3400677786 /* CommentListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBEB9512AC54B3400677786 /* CommentListItem.swift */; };
 		FBE554012AC35D4F0000CA6C /* Networker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE554002AC35D4F0000CA6C /* Networker.swift */; };
 		FBE554032AC35D6C0000CA6C /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE554022AC35D6C0000CA6C /* Endpoint.swift */; };
 		FBE554092AC35F0C0000CA6C /* URLEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE554082AC35F0C0000CA6C /* URLEndpoint.swift */; };
@@ -62,6 +64,8 @@
 		FBA0CA722ABC894E006681C3 /* PostifyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostifyApp.swift; sourceTree = "<group>"; };
 		FBA0CA762ABC894F006681C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FBA0CA792ABC894F006681C3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FBBEB94F2AC5398500677786 /* PostListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListItem.swift; sourceTree = "<group>"; };
+		FBBEB9512AC54B3400677786 /* CommentListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentListItem.swift; sourceTree = "<group>"; };
 		FBE554002AC35D4F0000CA6C /* Networker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networker.swift; sourceTree = "<group>"; };
 		FBE554022AC35D6C0000CA6C /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		FBE554082AC35F0C0000CA6C /* URLEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLEndpoint.swift; sourceTree = "<group>"; };
@@ -130,6 +134,7 @@
 		FB9925012AC4303E00C58224 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				FBBEB94D2AC5395800677786 /* Shared */,
 				FB3FCC0C2AC474D600E16E53 /* Post Details */,
 				FB3FCC032AC44F3A00E16E53 /* Posts */,
 				FB3FCBFA2AC4338400E16E53 /* User Details */,
@@ -183,6 +188,23 @@
 				FBA0CA792ABC894F006681C3 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FBBEB94D2AC5395800677786 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				FBBEB94E2AC5395D00677786 /* Components */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		FBBEB94E2AC5395D00677786 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				FBBEB94F2AC5398500677786 /* PostListItem.swift */,
+				FBBEB9512AC54B3400677786 /* CommentListItem.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 		FBE553FE2AC35D370000CA6C /* Core */ = {
@@ -324,7 +346,9 @@
 			files = (
 				FB3FCC002AC433BB00E16E53 /* UserDetailsView.swift in Sources */,
 				FB3FCC102AC474F600E16E53 /* PostDetailsViewModel.swift in Sources */,
+				FBBEB9502AC5398500677786 /* PostListItem.swift in Sources */,
 				FBE5540D2AC361870000CA6C /* PostEndpoint.swift in Sources */,
+				FBBEB9522AC54B3400677786 /* CommentListItem.swift in Sources */,
 				FB3FCC052AC44F4E00E16E53 /* PostsConfigurator.swift in Sources */,
 				FBE554162AC363A70000CA6C /* Post.swift in Sources */,
 				FB9925002AC42F1700C58224 /* UsersService.swift in Sources */,

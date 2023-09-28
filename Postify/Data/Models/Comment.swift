@@ -19,6 +19,12 @@ struct Comment: Codable, Identifiable {
   let publishDate: String
 }
 
+extension Comment {
+  public static func fake() -> Self {
+    return Comment(id: "12323", message: "This looks amazing 🙌", owner: UserPreview.fake(), post: "123123", publishDate: "22/09/21")
+  }
+}
+
 struct CommentCreate {
   let message: String
   let owner: String // User Id

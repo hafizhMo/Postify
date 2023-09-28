@@ -12,9 +12,13 @@ struct PostsView: View {
   
   var body: some View {
     NavigationView {
-      List(viewModel.posts.data) { post in
-        NavigationLink(destination: PostsRouter.destinationForTappedPost(post: post)) {
-          Text(post.text)
+      ScrollView {
+        VStack {
+          ForEach(viewModel.posts.data) { post in
+            NavigationLink(destination: PostsRouter.destinationForTappedPost(post: post)) {
+              PostListItem(post: post)
+            }
+          }
         }
       }.navigationTitle("Posts")
     }.onAppear {
