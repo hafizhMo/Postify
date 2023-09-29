@@ -13,7 +13,10 @@ struct PostDetailsView: View {
   var body: some View {
     ScrollView {
       VStack {
-        PostListItem(post: viewModel.post)
+        NavigationLink(destination: PostDetailsRouter.destinationForTappedPostDetails(user: viewModel.post.owner)) {
+          PostListItem(post: viewModel.post)
+            .foregroundColor(.primary)
+        }
         
         Text("Comments (\(viewModel.comments.data.count))")
           .bold()
@@ -22,7 +25,10 @@ struct PostDetailsView: View {
         
         if viewModel.comments.data.count > 0 {
           ForEach(Array(viewModel.comments.data.enumerated()), id: \.offset) { index, comment in
-            CommentListItem(comment: comment, withDivider: index == viewModel.comments.data.count-1)
+            NavigationLink(destination: PostDetailsRouter.destinationForTappedPostDetails(user: comment.owner)) {
+              CommentListItem(comment: comment, withDivider: index == viewModel.comments.data.count-1)
+                .foregroundColor(.primary)
+            }
           }
         } else {
           Text("No Comments")

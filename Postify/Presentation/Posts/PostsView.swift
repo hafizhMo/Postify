@@ -17,6 +17,7 @@ struct PostsView: View {
           ForEach(viewModel.posts.data) { post in
             NavigationLink(destination: PostsRouter.destinationForTappedPost(post: post)) {
               PostListItem(post: post)
+                .foregroundColor(.primary)
             }
           }
         }
