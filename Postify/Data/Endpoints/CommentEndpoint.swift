@@ -17,8 +17,11 @@ extension Endpoint {
     return Endpoint(path: "/post/\(id)/comment")
   }
   
-  static func getCommentsByUser(id: String) -> Self {
-    return Endpoint(path: "/user/\(id)/comment")
+  static func getCommentsByUser(id: String, count: Int = 10, page: Int = 1) -> Self {
+    return Endpoint(path: "/user/\(id)/comment", queryItems: [
+      URLQueryItem(name: "limit", value: "\(count)"),
+      URLQueryItem(name: "page", value: "\(page)")
+    ])
   }
   
   static func createComment(with comment: CommentCreate) -> Self {

@@ -33,6 +33,7 @@ struct PostDetailsView: View {
         Spacer()
       }
     }
+    .navigationBarTitleDisplayMode(.inline)
     .onAppear {
       viewModel.onAppear()
     }

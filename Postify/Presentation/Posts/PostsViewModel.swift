@@ -19,7 +19,7 @@ class PostsViewModel: ObservableObject {
   }
   
   public func onAppear() {
-    self.getPosts(count: 50)
+    self.getPosts(count: 10)
   }
   
   private func getPosts(count: Int) {
