@@ -118,7 +118,10 @@ struct UserDetailsView: View {
     VStack {
       if viewModel.comments.data.count > 0 {
         ForEach(Array(viewModel.comments.data.enumerated()), id: \.offset) { index, comment in
-          CommentListItem(comment: comment, withDivider: index == viewModel.comments.data.count-1)
+          NavigationLink(destination: UserDetailsRouter.destinationForTappedPost(id: comment.post)) {
+            CommentListItem(comment: comment, withDivider: index == viewModel.comments.data.count-1)
+              .foregroundColor(.primary)
+          }
         }
       } else {
         Text("No Comments")

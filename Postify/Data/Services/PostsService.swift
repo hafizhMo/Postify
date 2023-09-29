@@ -13,7 +13,7 @@ protocol PostsServiceProtocol: AnyObject {
   
   func getPosts() -> AnyPublisher<Posts, Error>
   func getPosts(count: Int) -> AnyPublisher<Posts, Error>
-  func getPost(id: String) -> AnyPublisher<Post, Error>
+  func getPost(id: String) -> AnyPublisher<PostPreview, Error>
   func getPostByUser(id: String) -> AnyPublisher<Posts, Error>
 }
 
@@ -30,9 +30,9 @@ final class PostsService: PostsServiceProtocol {
     return networker.get(type: Posts.self, url: endpoint.url, headers: endpoint.headers)
   }
   
-  func getPost(id: String) -> AnyPublisher<Post, Error> {
+  func getPost(id: String) -> AnyPublisher<PostPreview, Error> {
     let endpoint = Endpoint.getPost(id: id)
-    return networker.get(type: Post.self, url: endpoint.url, headers: endpoint.headers)
+    return networker.get(type: PostPreview.self, url: endpoint.url, headers: endpoint.headers)
   }
   
   func getPostByUser(id: String) -> AnyPublisher<Posts, Error> {

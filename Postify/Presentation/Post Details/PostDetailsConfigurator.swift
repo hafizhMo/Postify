@@ -13,4 +13,10 @@ final class PostDetailsConfigurator {
     let postDetailsView = PostDetailsView(viewModel: PostDetailsViewModel(post: post))
     return postDetailsView
   }
+  
+  public static func configurePostDetailsView(with id: String) -> PostDetailsView {
+    
+    let postDetailsView = PostDetailsView(viewModel: PostDetailsViewModel(id: id))
+    return postDetailsView
+  }
 }
