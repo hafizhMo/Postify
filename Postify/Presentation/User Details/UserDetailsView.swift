@@ -29,10 +29,7 @@ struct UserDetailsView: View {
             .frame(width: screenWidth * 0.2, height: screenWidth * 0.2, alignment: .center)
         }
         
-        HStack {
-          Text(viewModel.user.firstName)
-          Text(viewModel.user.lastName)
-        }
+        detail
         
         Picker("Activities", selection: $viewModel.segmented) {
           ForEach(viewModel.segmentedItem, id: \.self) {
@@ -54,6 +51,49 @@ struct UserDetailsView: View {
     .navigationBarTitleDisplayMode(.inline)
     .onAppear {
       viewModel.onAppear()
+    }
+  }
+  
+  private var detail: some View {
+    VStack {
+      Text(viewModel.user.gender)
+        .font(.caption)
+        .padding(.vertical, 4)
+        .padding(.horizontal, 8)
+        .background(.blue)
+        .cornerRadius(4)
+      
+      Text(viewModel.userPreview.firstName + " " + viewModel.userPreview.lastName)
+        .foregroundColor(.white)
+        .font(.headline)
+        .bold()
+      
+      Text(viewModel.user.email)
+        .foregroundColor(.secondary)
+        .padding(.bottom)
+      
+      HStack {
+        HStack(spacing: 0) {
+          Image(systemName: "calendar")
+          Text(viewModel.user.dateOfBirth.prefix(10))
+            .font(.body)
+        }
+        .padding()
+        .foregroundColor(.gray)
+        .background(.gray.opacity(0.2))
+        .cornerRadius(4)
+        
+        HStack(spacing: 0) {
+          Image(systemName: "phone")
+          Text(viewModel.user.phone)
+            .font(.body)
+        }
+        .padding()
+        .foregroundColor(.gray)
+        .background(.gray.opacity(0.2))
+        .cornerRadius(4)
+      }
+      .padding(.horizontal)
     }
   }
   
