@@ -30,6 +30,7 @@
 		FBBEB9502AC5398500677786 /* PostListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBEB94F2AC5398500677786 /* PostListItem.swift */; };
 		FBBEB9522AC54B3400677786 /* CommentListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBEB9512AC54B3400677786 /* CommentListItem.swift */; };
 		FBBF48E02AC72D3500EF7A99 /* PostDetailROuter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBF48DF2AC72D3500EF7A99 /* PostDetailROuter.swift */; };
+		FBBF48E22AC72EA100EF7A99 /* UserDetailsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBF48E12AC72EA100EF7A99 /* UserDetailsRouter.swift */; };
 		FBE554012AC35D4F0000CA6C /* Networker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE554002AC35D4F0000CA6C /* Networker.swift */; };
 		FBE554032AC35D6C0000CA6C /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE554022AC35D6C0000CA6C /* Endpoint.swift */; };
 		FBE554092AC35F0C0000CA6C /* URLEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE554082AC35F0C0000CA6C /* URLEndpoint.swift */; };
@@ -68,6 +69,7 @@
 		FBBEB94F2AC5398500677786 /* PostListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListItem.swift; sourceTree = "<group>"; };
 		FBBEB9512AC54B3400677786 /* CommentListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentListItem.swift; sourceTree = "<group>"; };
 		FBBF48DF2AC72D3500EF7A99 /* PostDetailROuter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailROuter.swift; sourceTree = "<group>"; };
+		FBBF48E12AC72EA100EF7A99 /* UserDetailsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsRouter.swift; sourceTree = "<group>"; };
 		FBE554002AC35D4F0000CA6C /* Networker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networker.swift; sourceTree = "<group>"; };
 		FBE554022AC35D6C0000CA6C /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		FBE554082AC35F0C0000CA6C /* URLEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLEndpoint.swift; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 				FB3FCBFB2AC433A200E16E53 /* UserDetailsConfigurator.swift */,
 				FB3FCBFF2AC433BB00E16E53 /* UserDetailsView.swift */,
 				FB3FCBFD2AC433AC00E16E53 /* UserDetailsViewModel.swift */,
+				FBBF48E12AC72EA100EF7A99 /* UserDetailsRouter.swift */,
 			);
 			path = "User Details";
 			sourceTree = "<group>";
@@ -352,6 +355,7 @@
 				FBBEB9502AC5398500677786 /* PostListItem.swift in Sources */,
 				FBE5540D2AC361870000CA6C /* PostEndpoint.swift in Sources */,
 				FBBEB9522AC54B3400677786 /* CommentListItem.swift in Sources */,
+				FBBF48E22AC72EA100EF7A99 /* UserDetailsRouter.swift in Sources */,
 				FB3FCC052AC44F4E00E16E53 /* PostsConfigurator.swift in Sources */,
 				FBE554162AC363A70000CA6C /* Post.swift in Sources */,
 				FB9925002AC42F1700C58224 /* UsersService.swift in Sources */,

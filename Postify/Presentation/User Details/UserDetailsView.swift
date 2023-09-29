@@ -101,8 +101,9 @@ struct UserDetailsView: View {
     VStack {
       if viewModel.posts.data.count > 0 {
         ForEach(viewModel.posts.data) { post in
-          NavigationLink(destination: PostsRouter.destinationForTappedPost(post: post)) {
+          NavigationLink(destination: UserDetailsRouter.destinationForTappedPost(post: post)) {
             PostListItem(post: post)
+              .foregroundColor(.primary)
           }
         }
       } else {
